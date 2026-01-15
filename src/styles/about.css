@@ -1,0 +1,35 @@
+.about {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 0 20px;
+  line-height: 1.7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #1e40af; /* deep blue for emphasis */
+}
+
+.about p {
+  margin-bottom: 18px;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 0 15px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+}

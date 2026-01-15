@@ -1,0 +1,92 @@
+/* ======================================================
+   CONTACT SECTION – PROFESSIONAL STYLE
+====================================================== */
+
+.contact {
+  background: linear-gradient(180deg, #1f2937, #111827);
+  color: #f9fafb;
+  padding: 80px 20px;
+}
+
+.contact-container {
+  max-width: 900px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact .section-title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.contact-intro {
+  max-width: 650px;
+  margin: 0 auto 45px;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #d1d5db;
+}
+
+/* ======================================================
+   DETAILS
+====================================================== */
+
+.contact-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 35px;
+}
+
+.contact-item {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  transition: transform 0.35s ease, background 0.35s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-6px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.contact-item span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #9ca3af;
+}
+
+.contact-item p {
+  margin: 0;
+  font-weight: 600;
+  color: #e5e7eb;
+}
+
+/* ======================================================
+   LINKS
+====================================================== */
+
+.contact a {
+  color: #60a5fa;
+  text-decoration: none;
+  font-weight: 700;
+  word-break: break-word;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width: 768px) {
+  .contact .section-title {
+    font-size: 2rem;
+  }
+}

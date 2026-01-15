@@ -1,0 +1,168 @@
+/* ======================================================
+   RESET & BASE STYLES
+====================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f172a; /* Dark tech background */
+  color: #e5e7eb;           /* Light text */
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* ======================================================
+   SECTION SPACING
+====================================================== */
+section {
+  scroll-margin-top: 90px;
+  padding: 100px 20px;
+}
+
+/* ======================================================
+   HEADINGS
+====================================================== */
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #0ea5e9; /* Tech blue */
+}
+
+h2 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #38bdf8;
+  position: relative;
+}
+
+/* Optional subtle underline */
+h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #0ea5e9;
+  margin-top: 6px;
+  border-radius: 2px;
+}
+
+/* ======================================================
+   PARAGRAPHS & TEXT
+====================================================== */
+p {
+  font-size: 1.05rem;
+  max-width: 800px;
+  margin-bottom: 16px;
+  color: #d1d5db;
+  line-height: 1.7;
+}
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0ea5e9;
+  text-decoration: underline;
+}
+
+/* ======================================================
+   BUTTONS
+====================================================== */
+button, .btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+button.primary, .btn.primary {
+  background-color: #0ea5e9;
+  color: #fff;
+}
+
+button.primary:hover, .btn.primary:hover {
+  background-color: #38bdf8;
+}
+
+button.secondary, .btn.secondary {
+  background-color: transparent;
+  color: #0ea5e9;
+  border: 2px solid #0ea5e9;
+}
+
+button.secondary:hover, .btn.secondary:hover {
+  background-color: #0ea5e9;
+  color: #fff;
+}
+
+/* ======================================================
+   CARDS & CONTAINERS
+====================================================== */
+.card, .container {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* ======================================================
+   CODE / TECH TEXT
+====================================================== */
+code, pre {
+  background-color: #111827;
+  color: #0ea5e9;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: "Fira Code", monospace;
+}
+
+/* ======================================================
+   SCROLL ANIMATION
+====================================================== */
+.pop-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.pop-in.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  button, .btn {
+    padding: 8px 16px;
+    font-size: 0.95rem;
+  }
+}
