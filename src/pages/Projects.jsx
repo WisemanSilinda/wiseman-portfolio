@@ -21,8 +21,8 @@ const PROJECTS = [
     summary: "System for managing patient records, billing, and reporting.",
     tech: ["ASP.NET MVC", "C#", "SQL Server"],
     image: hospitalImg,
-    github: "https://github.com/yourusername/hospital-management",
-    liveDemo: "https://hospital-demo.example.com",
+    github: "#",
+    liveDemo: "#",
   },
   {
     id: 2,
@@ -30,8 +30,8 @@ const PROJECTS = [
     summary: "Business automation system for fridge inventory and allocation.",
     tech: ["ASP.NET MVC", "Dapper", "SQL Server"],
     image: fridgeImg,
-    github: "https://github.com/yourusername/fridge-allocation",
-    liveDemo: "https://fridge-demo.example.com",
+    github: "https://github.com/WisemanSilinda/InnovationTechnology",
+    liveDemo: "#",
   },
   {
     id: 3,
@@ -48,8 +48,7 @@ const PROJECTS = [
     summary: "Online scheduling system for booking and managing appointments.",
     tech: ["React", "REST API"],
     image: appointmentImg,
-    github: "https://github.com/yourusername/appointment-booking",
-    liveDemo: "https://appointment-demo.example.com",
+    github: "https://github.com/Tshope/ONT2025_BESTTECH",
   },
   {
     id: 5,
@@ -57,8 +56,8 @@ const PROJECTS = [
     summary: "System for managing calls, agents, and customer interactions.",
     tech: ["ASP.NET", "SQL Server"],
     image: callCenterImg,
-    github: "https://github.com/yourusername/call-centre-system",
-    liveDemo: "https://callcentre-demo.example.com",
+    github: "https://github.com/Tshope/ONTPROJECT2025",
+    liveDemo: "#",
   },
 ];
 
