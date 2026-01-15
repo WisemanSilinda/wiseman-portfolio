@@ -20,7 +20,7 @@ function ProjectModal({ project, close }) {
 
         <div className="modal-actions">
           <a href="#" target="_blank">GitHub</a>
-          <a href="#" target="_blank">Live Demo</a>
+          <a href="https://soit-iis.mandela.ac.za/GRP-04-07/" target="_blank">Live Demo</a>
         </div>
       </div>
     </div>

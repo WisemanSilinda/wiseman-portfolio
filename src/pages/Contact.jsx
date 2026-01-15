@@ -1,16 +1,16 @@
-import "../styles/contact.css"; 
+import "../styles/contact.css";
 import { useRef } from "react";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
-function Contact() { 
-  const contactRef = useRef(null);
-  useScrollAnimation(contactRef);
+function Contact() {
+  const sectionRef = useRef(null);
+  useScrollAnimation(sectionRef);
 
   return (
-    <section 
-      id="contact" 
-      className="contact pop-in" // <-- added pop-in class
-      ref={contactRef}           // <-- connected ref
+    <section
+      id="contact"
+      className="contact pop-in"
+      ref={sectionRef}
     >
       <div className="contact-container">
         <h2 className="section-title">Get In Touch</h2>
@@ -21,19 +21,19 @@ function Contact() {
         </p>
 
         <div className="contact-details">
-          <div className="contact-item">
+          <article className="contact-item">
             <span>Email</span>
             <a href="mailto:silindawiseman01@gmail.com">
               silindawiseman01@gmail.com
             </a>
-          </div>
+          </article>
 
-          <div className="contact-item">
+          <article className="contact-item">
             <span>Location</span>
             <p>Johannesburg, South Africa</p>
-          </div>
+          </article>
 
-          <div className="contact-item">
+          <article className="contact-item">
             <span>LinkedIn</span>
             <a
               href="https://www.linkedin.com/in/wiseman-silinda-b96307208"
@@ -42,7 +42,7 @@ function Contact() {
             >
               linkedin.com/in/wiseman-silinda
             </a>
-          </div>
+          </article>
         </div>
       </div>
     </section>

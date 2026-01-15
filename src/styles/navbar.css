@@ -1,36 +1,78 @@
+/* ======================================================
+   NAVBAR – DEVELOPER THEME
+====================================================== */
+
 .navbar {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 70px;
-  background: white;
+  height: 72px;
+  background: rgba(2, 6, 23, 0.85);
+  backdrop-filter: blur(10px);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 50px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 0 48px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
   z-index: 1000;
 }
 
+/* Brand */
 .navbar h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #2563eb;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #22d3ee;
+  letter-spacing: -0.02em;
 }
 
+/* Nav links */
 .navbar ul {
   display: flex;
   list-style: none;
-  gap: 30px;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
 }
 
 .navbar a {
+  position: relative;
   text-decoration: none;
   font-weight: 600;
-  color: #1f2937;
-  transition: color 0.3s;
+  font-size: 0.95rem;
+  color: #e5e7eb;
+  transition: color 0.25s ease;
+}
+
+/* Hover underline */
+.navbar a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(90deg, #22d3ee, #38bdf8);
+  transition: width 0.25s ease;
 }
 
 .navbar a:hover {
-  color: #2563eb;
+  color: #22d3ee;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+/* ======================================================
+   RESPONSIVE
+====================================================== */
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 24px;
+  }
+
+  .navbar ul {
+    gap: 20px;
+  }
 }

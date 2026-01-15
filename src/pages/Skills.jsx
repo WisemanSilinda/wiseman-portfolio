@@ -1,21 +1,21 @@
-import "../styles/skills.css"; 
+import "../styles/skills.css";
 import { useRef } from "react";
 import { useScrollAnimation } from "../hooks/useScrollAnimation";
 
-function Skills() { 
-  const skillsRef = useRef(null);
-  useScrollAnimation(skillsRef);
+function Skills() {
+  const sectionRef = useRef(null);
+  useScrollAnimation(sectionRef);
 
   return (
-    <section 
-      id="skills" 
-      className="skills pop-in" // <-- added pop-in
-      ref={skillsRef}           // <-- attached ref
+    <section
+      id="skills"
+      className="skills pop-in"
+      ref={sectionRef}
     >
       <h2 className="section-title">Skills</h2>
 
       <div className="skills-grid">
-        <div className="skill-card">
+        <article className="skill-card">
           <h3>Programming Languages</h3>
           <ul>
             <li>C#</li>
@@ -26,9 +26,9 @@ function Skills() {
             <li>Delphi</li>
             <li>TypeScript (Basic)</li>
           </ul>
-        </div>
+        </article>
 
-        <div className="skill-card">
+        <article className="skill-card">
           <h3>Backend Development</h3>
           <ul>
             <li>ASP.NET MVC</li>
@@ -38,76 +38,76 @@ function Skills() {
             <li>Authentication & Authorization</li>
             <li>CRUD Operations</li>
           </ul>
-        </div>
+        </article>
 
-        <div className="skill-card">
+        <article className="skill-card">
           <h3>Frontend Development</h3>
           <ul>
             <li>React.js</li>
             <li>HTML5 & CSS3</li>
             <li>JavaScript</li>
             <li>Responsive Design</li>
-            <li>Bootstrap / CSS Flexbox & Grid</li>
+            <li>Flexbox & CSS Grid</li>
             <li>Basic UI/UX Principles</li>
           </ul>
-        </div>
+        </article>
 
-        <div className="skill-card">
+        <article className="skill-card">
           <h3>UI / UX Design</h3>
           <ul>
-            <li>User-Centered Design Principles</li>
+            <li>User-Centered Design</li>
             <li>Wireframing & Prototyping</li>
-            <li>Responsive & Mobile-First Design</li>
+            <li>Mobile-First Design</li>
             <li>Accessibility Basics (WCAG)</li>
-            <li>Consistency & Design Systems</li>
+            <li>Design Consistency</li>
             <li>Usability Testing</li>
           </ul>
-        </div>
+        </article>
 
-        <div className="skill-card">
+        <article className="skill-card">
           <h3>Databases</h3>
           <ul>
             <li>SQL Server</li>
             <li>MySQL</li>
-            <li>Database Design & Normalization</li>
+            <li>Database Design</li>
             <li>Stored Procedures</li>
-            <li>Basic Performance Optimization</li>
+            <li>Performance Optimization</li>
           </ul>
-        </div>
+        </article>
 
-        <div className="skill-card">
+        <article className="skill-card">
           <h3>Tools & Practices</h3>
           <ul>
             <li>Git & GitHub</li>
-            <li>Agile / Scrum Methodology</li>
-            <li>Software Testing (Unit & Manual)</li>
-            <li>Debugging & Troubleshooting</li>
-            <li>Clean Code Principles</li>
+            <li>Agile / Scrum</li>
+            <li>Software Testing</li>
+            <li>Debugging</li>
+            <li>Clean Code</li>
             <li>Documentation</li>
           </ul>
-        </div>
+        </article>
 
-        <div className="skill-card">
+        <article className="skill-card">
           <h3>Project Management</h3>
           <ul>
             <li>Requirements Analysis</li>
-            <li>Agile / Scrum Practices</li>
-            <li>Sprint Planning & Task Breakdown</li>
+            <li>Sprint Planning</li>
+            <li>Task Breakdown</li>
             <li>Stakeholder Communication</li>
-            <li>Time & Priority Management</li>
-            <li>Risk Identification & Mitigation</li>
+            <li>Time Management</li>
+            <li>Risk Mitigation</li>
           </ul>
-        </div>
+        </article>
 
-        <div className="skill-card">
+        <article className="skill-card">
           <h3>DevOps & Deployment</h3>
           <ul>
-            <li>Basic CI/CD Concepts</li>
+            <li>CI/CD Basics</li>
             <li>IIS Deployment</li>
             <li>Environment Configuration</li>
             <li>Version Control Workflows</li>
           </ul>
-        </div>
+        </article>
       </div>
     </section>
   );
